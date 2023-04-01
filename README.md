@@ -1,4 +1,4 @@
-## ** jpa를 활용한 예제 **
+<h3 align="center">JPA를 활용한 예제</h3>
 ### 1. jpa 환경설정 셋팅(maven)
  * 라이브러리 추가(pom.xml)
  * jpa 설정(persistence.xml)
