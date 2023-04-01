@@ -1,4 +1,4 @@
-# *** jpa를 활용한 예제 ***
+## ** jpa를 활용한 예제 **
 ### 1. jpa 환경설정 셋팅(maven)
  * 라이브러리 추가(pom.xml)
  * jpa 설정(persistence.xml)
@@ -8,9 +8,12 @@
  * EntityManager 생성
  * EntityTransaction 생성 후 begin(), commit()을 사용하여 트랜젝션 구현
  
-### 2. Member 객체를 활용한 CRUD 구현
+### 3. Member 객체를 활용한 CRUD 구현
   * find() 함수를 사용한 리스트 db 조회
   * remove() 함수를 사용한 영속성 컨텍스트 제거
   * 영속성 컨텍스트 값 수정을 통한 update 적용
   * persist() 함수를 사용한 create 적용
   * flush() 함수를 사용하여 쿼리 생성 확인
+    * em.flush() 직접 호출 
+    * commit() 자동 호출
+    * jpql 쿼리 실행 시 자동 호출
