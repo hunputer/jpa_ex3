@@ -30,4 +30,14 @@
    * @Enumerated
      * EnumType.ORDINAL - enum 순서를 데이터베이스에 저장
      * EnumType.STRING - enum 이름을 데이터베이스에 저장
-   
+   * @Temporal - 날짜 컬럼
+     * LocalDate, LocalDateTime로 대체 가능
+   * @Lob - 문자면 Clob 나머지 blob으로 매핑
+
+#### 5.Entity에 사용하는 기본키 전략
+   * strategy
+     * GenerationType.IDENTITY - DB가 알아서 ID값 세팅
+       * commit 전에 persist 동작 시점에 쿼리가 날라감
+     * GenerationType.SEQUENCE - 시퀸스로 셋팅 , generator - 해당 시퀀스로 적용
+       * 시퀀스 값을 가져와야 하기 떄문에 persist에서 시퀀스 값 호출후 컨텍스트에 적용 
+    
