@@ -18,7 +18,7 @@ public class JpaMain7 {
         try{
             //영속성 컨텍스트 값변경
             Member member1 = em.find(Member.class, 150L);
-            member1.setName("ZZZZZ");
+            member1.setUsername("zzzzz");
 
             System.out.println("==========================");
 
