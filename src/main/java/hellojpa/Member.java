@@ -7,10 +7,15 @@ import java.util.Date;
 public class Member {
 
     @Id
+    @Column(name = "MEMBER_ID")
     private Long id;
     @Column(name = "name", unique = true, length = 10)
     private String username;
     private int age;
+
+    @ManyToOne
+    @JoinColumn(name = "TEAM_ID")
+    private Team team;
 
     @Enumerated(EnumType.STRING)
     private RoleType roleType;
@@ -81,5 +86,29 @@ public class Member {
 
     public void setLastModifiDate(Date lastModifiDate) {
         this.lastModifiDate = lastModifiDate;
+    }
+
+    public Team getTeam() {
+        return team;
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getTemp() {
+        return temp;
+    }
+
+    public void setTemp(int temp) {
+        this.temp = temp;
     }
 }
