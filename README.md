@@ -42,7 +42,7 @@
        * 시퀀스 값을 가져와야 하기 떄문에 persist에서 시퀀스 값 호출후 컨텍스트에 적용
 
 #### 6. 단방향, 양방향 엔티티
-    * 주인 엔티티( @JoinColumn name값은 테이블 컬럼명 셋팅 ) - 외래 키가 있는곳이 주인
+    * 주인 엔티티( @JoinColumn name값은 테이블 컬럼명 셋팅 ) - 외래 키가 있는 테이블이 주인
       @ManyToOne
       @JoinColumn(name = "TEAM_ID")
       private Team team;
