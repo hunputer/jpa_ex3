@@ -28,10 +28,16 @@ public class JapMain9 {
             member.setUsername("jihun");
             em.persist(member);
 
+            em.flush();
+            em.clear();
+
             Member findMember = em.find(Member.class, member.getId());
 
             Team findTeam = findMember.getTeam();
             System.out.println("findTeam = " + findTeam.getName());
+
+            Team newTeam = em.find(Team.class, 100L);
+            member.setTeam(newTeam);
 
             tx.commit();
         }catch(Exception e){
