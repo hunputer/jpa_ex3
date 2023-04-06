@@ -50,6 +50,9 @@
     * 종속 엔티티( mappedBy에 엔티티 데이터명 셋팅 )
       @OneToMany(mappedBy = "team")
       private List<Member> members= new ArrayList<>();
+
+#### 7. 일대다, 다대일 엔티티
+   * 1:N 일경우 N인 테이블에 외래키가 있어야함
   
      
     

@@ -32,6 +32,11 @@ public class Member {
     @Transient
     private int temp;
 
+
+    @OneToOne
+    @JoinColumn(name="LOCKER_ID")
+    private Locker locker;
+
     public Long getId() {
         return id;
     }
@@ -111,5 +116,13 @@ public class Member {
 
     public void setTemp(int temp) {
         this.temp = temp;
+    }
+
+    public Locker getLocker() {
+        return locker;
+    }
+
+    public void setLocker(Locker locker) {
+        this.locker = locker;
     }
 }
