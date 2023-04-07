@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Item {
 
-    @Id @GeneratedValue
+    @Id
     private Long id;
 
     private String name;
