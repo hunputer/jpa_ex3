@@ -60,6 +60,8 @@
       * @Inheritance(strategy = InheritanceType.JOINED) 부모엔티티에 어노테이션 삽입
       * 하위엔티티 insert시 상위엔티티와 하위엔티티 insert문이 같이 날라감
       * 하위엔티티 조회시 상위엔티티와 하위엔티티 조인 후 조회함
+      
+      
    
   
      
