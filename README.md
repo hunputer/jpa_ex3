@@ -64,6 +64,10 @@
       * 상위 엔티티 @DiscriminatorColumn 
       * 하위 엔티티 @DiscriminatorValue("데이터명")
    * 단일테이블 전략 - 하나의 디비에 전체 컬럼 추가
+      * @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+   * 구현클래스 마다 테이블 전략 - 상위엔티티 테이블이 없고 상위테이블 컬럼이 하위테이블에 들어가있는 전략
+      * @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+      * 상위엔티티 클래스를 추상클래스로 선언(abstract 추가)
       
       
    
