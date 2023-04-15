@@ -60,6 +60,10 @@
       * @Inheritance(strategy = InheritanceType.JOINED) 부모엔티티에 어노테이션 삽입
       * 하위엔티티 insert시 상위엔티티와 하위엔티티 insert문이 같이 날라감
       * 하위엔티티 조회시 상위엔티티와 하위엔티티 조인 후 조회함
+   * DTYPE 컬럼을 추가하여 하위엔티티 구분 
+      * 상위 엔티티 @DiscriminatorColumn 
+      * 하위 엔티티 @DiscriminatorValue("데이터명")
+   * 단일테이블 전략 - 하나의 디비에 전체 컬럼 추가
       
       
    
